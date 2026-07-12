@@ -1,3 +1,7 @@
+output "service_plans_id" {
+  description = "Map of id values across all service_plans, keyed the same as var.service_plans"
+  value       = { for k, v in azurerm_service_plan.service_plans : k => v.id }
+}
 output "service_plans_app_service_environment_id" {
   description = "Map of app_service_environment_id values across all service_plans, keyed the same as var.service_plans"
   value       = { for k, v in azurerm_service_plan.service_plans : k => v.app_service_environment_id }
