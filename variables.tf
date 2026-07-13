@@ -25,8 +25,8 @@ EOT
     sku_name                        = string
     app_service_environment_id      = optional(string)
     maximum_elastic_worker_count    = optional(number)
-    per_site_scaling_enabled        = optional(bool) # Default: false
-    premium_plan_auto_scale_enabled = optional(bool) # Default: false
+    per_site_scaling_enabled        = optional(bool)
+    premium_plan_auto_scale_enabled = optional(bool)
     tags                            = optional(map(string))
     worker_count                    = optional(number)
     zone_balancing_enabled          = optional(bool)
